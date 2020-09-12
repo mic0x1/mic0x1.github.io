@@ -8,11 +8,11 @@ title: Home
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">
+      <a href="{{ post.url }}" style="text-decoration: none">
         <div style="width: 100%">
           <h3>{{ post.title }}</h3>
-          <p>{{ post.excerpt }}</p>
-          <small>{{ post.date | %B %d, %y }}</small>
+          <p style="color: #495057">{{ post.excerpt | truncate: 25, "" }}</p>
+          <small>{{ post.date | date: %B %d, %y }}</small>
         </div>
       </a>
     </li>
