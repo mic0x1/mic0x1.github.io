@@ -4,5 +4,17 @@ title: Home
 ---
 
 欢迎来到我的博客。
-
----
+<hr>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        <div style="width: 100%">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt }}</p>
+          <small>{{ post.date | %B %d, %y }}</small>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
