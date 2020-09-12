@@ -12,7 +12,7 @@ title: Home
         <div style="width: 100%">
           <h3>{{ post.title }}</h3>
           <p style="color: #495057">{{ post.excerpt | truncate: 25, "" }}</p>
-          <small>{{ post.date | date: %B %d, %y }}</small>
+          <small>{{ post.date | date: "%B %d, %y" }}</small>
         </div>
       </a>
     </li>
