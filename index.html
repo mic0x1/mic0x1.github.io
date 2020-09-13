@@ -14,9 +14,13 @@ title: Home
       <a href="{{ post.url }}" style="text-decoration: none">
         <div style="width: 100%">
           <h3>{{ post.title }}</h3>
+          {% if post.excerpt %}
           <span style="color: #495057">{{ post.excerpt | truncate: 78, "..." }}</span>
+          {% else %}
+          这个文章没有描述
+          {% endif %}
           <br>
-          <small>{{ post.date | date: "%-B %-d, %Y" }}</small>
+          <small style="color: #495057">{{ post.date | date: "%-B %-d, %Y" }}</small>
         </div>
       </a>
     </li>
