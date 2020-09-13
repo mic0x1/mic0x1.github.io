@@ -14,7 +14,7 @@ title: Home
       <a href="{{ post.url }}" style="text-decoration: none">
         <div style="width: 100%">
           <h3>{{ post.title }}</h3>
-          <span style="color: #495057">{{ post.excerpt | truncate: 78, "..." }}</span>
+          <span style="color: #495057">{{ post.des | default: "这篇文章没有描述"}}</span>
           <br>
           <small style="color: #495057">{{ post.date | date: "%Y年%-m月%-d日" }}</small>
         </div>
