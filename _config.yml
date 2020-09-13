@@ -30,7 +30,7 @@ sass:
 # Options
 
 # Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
+ga_analytics: UA-147400618-5
 
 # Specify the author for blog posts
 author:
@@ -43,6 +43,6 @@ version: 3.0.0
 
 # Gitalk settings
 comment_gitalk_clientId: 2b089df51fe62d4af4fc
-comment_gitalk_clientSecret: e37a0d2c4f0752d9eede5bf6d6d42e7fd0e6216f
+comment_gitalk_clientSecret: 5dc9af284245d72c430d5d6d0f63fb7e20c8be99
 comment_gitalk_repo: mic0x1.github.io
 github_username: mic0x1
