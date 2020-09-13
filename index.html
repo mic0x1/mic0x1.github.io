@@ -17,7 +17,7 @@ title: Home
           {% if post.excerpt %}
           <span style="color: #495057">{{ post.excerpt | truncate: 78, "..." }}</span>
           {% else %}
-          这个文章没有描述
+          <span style="color: #495057">这个文章没有描述</span>
           {% endif %}
           <br>
           <small style="color: #495057">{{ post.date | date: "%-B %-d, %Y" }}</small>
