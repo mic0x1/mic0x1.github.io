@@ -5,7 +5,7 @@ title: Home
 
 欢迎来到我的博客。
 <hr>
-{% if post in site.posts %}
+{% if site.posts %}
 <ul style="list-style-type:none;margin:0;padding:0">
   {% for post in site.posts %}
     <li>
@@ -23,6 +23,6 @@ title: Home
 {% else %}
 这里没有博客
 {% endif %}
-{% if post in site.posts > 5 %}
+{% if site.posts > 5 %}
 <a href="/archive" style="text-align: center">查看所有博客</a>
 {% endif %}
