@@ -4,7 +4,7 @@ tagline:
 url: https://mic0x1.github.io
 paginate: 5
 baseurl: ""
-permalink: /:title
+permalink: /:title/
 
 # Gems
 plugins:
