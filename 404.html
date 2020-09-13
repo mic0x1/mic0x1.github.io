@@ -8,3 +8,21 @@ permalink: 404.html
   <h1 class="page-title">404：所寻找的网页找不到</h1>
   <p class="lead">看来我们找不到你想前往的网页，或许你可以<a href="/">回到主页</a>...</p>
 </div>
+<!-- HTML elements for search -->
+<input type="text" id="search-input" placeholder="搜索本网站" style="width:50%; height: 25%"/>
+<ul id="results-container"; style="list-style-type:none;margin:0;padding:0"></ul>
+
+<!-- script pointing to jekyll-search.js -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<script>
+SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: '没有找到任何结果',
+    limit: 20,
+    fuzzy: true
+  })
+</script>
