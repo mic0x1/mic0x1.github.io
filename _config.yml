@@ -2,8 +2,6 @@
 title: mic 的博客
 tagline: 
 url: https://mic0x1.github.io
-paginate: 5
-paginate_path: "/page:num/"
 baseurl: ""
 permalink: /:title/
 timezone: Asia/Shanghai
