@@ -12,7 +12,7 @@ title: 存档
   <h2>{{ yearMonth.name }}</h2>
   <ul>
     {% for post in yearMonth.items %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}" style="text-decoration: none; color: #495057" >{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
