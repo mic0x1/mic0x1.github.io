@@ -9,7 +9,7 @@ title: 主页
 <p>这里没有博客...</p>
 {% else %}
 <ul style="list-style-type:none;margin:0;padding:0">
-  {% for post in site.posts limit: 3 %}
+  {% for post in site.posts limit: 5 %}
     <li>
       <a href="{{ post.url }}" style="text-decoration: none">
         <div style="width: 100%">
